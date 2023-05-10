@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title%}Feedback Page{% endblock %} {% block
+    content %}
+    {% if user != None and user['type'] != 'admin' %}
+    <head>
+        <meta http-equiv="refresh" content="0;url=/" />
+    </head>
+    {% endif %}
+  <main id="main">
+    <center>
+        <section class="inner-page">
+            <div class="container" data-aos="fade-up">
+                <h2 class="mt-5">Feedback</h2>
+                
+                {% for comment in comments %}
+                    <hr>
+                    <div class="row" style="text-align: start;">
+                        <div class="col-sm-3">
+                            <div class="review-block-name"><b>{{comment['name']}}</b></div>
+                            <div class="review-block-date">{{comment['email']}}</div>
+                            <form action="" method="post">
+                                <input type="hidden" name="commentId" value="{{comment['id']}}">
+                                <input class="btn btn-danger" type="submit" value="Delete Feedback" name="deleteFeedback">
+                            </form>
+                        </div>
+                        <div class="col-sm-9">
+                            <b>{{comment['subject']}}</b>
+                            <br>
+                            <div class="review-block-description">{{comment['message']}}</div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <hr/>
+            </div>
+        </section>
+    </center>
+  </main><!-- End #main -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  {% endblock %}

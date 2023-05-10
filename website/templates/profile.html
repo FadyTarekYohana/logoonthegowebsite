@@ -1,0 +1,55 @@
+{% extends "base.html" %} 
+{% block title%}Profile{% endblock %} 
+{% block content %}
+<main id="main">
+    <center>
+      <section class="inner-page">
+        <section id="contact" class="contact" data-aos="fade-up">
+            <div class="container d-flex justify-content-center">
+              <div class="ms-5">
+                <div class="card" style="width: 18rem; height: 26rem">
+                  <div class="card-body p-4">
+                    <img src="{{profilePicture}}"
+                  alt="profilePicture" class="img-fluid"
+                  style="width: 18rem; border-radius: 0.5rem;">
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <h5 class="mb-1">{{user['username']}}</h5>
+                    <p class="mb-2 pb-1" style="color: #2b2a2a;">{{user['email']}}</p>
+                  </div>
+                </div>
+                <div class="m-3">
+                  <form action = "" method = "post" enctype="multipart/form-data">
+                    <label for="formFile" class="form-label">Change Profile Picture</label>
+                    <input class="form-control" type="file" name="file" required>
+                    <button type="submit" class="btn btn-secondary mt-2">Upload</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <section id="portfolio" class="portfolio">
+              <div class="container" data-aos="fade-up">
+              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                {% for logo in logoData %}
+                <a href="logo-details?logo={{logoData[loop.index0]['file']}}&creator={{creatorId}}">
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="{{get_logo_file(logoData[loop.index0]['file'])}}" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>{{logoData[loop.index0]['name']}}</h4>
+                        <p>{{logoData[loop.index0]['created_by']}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </center>
+  </main>
+{% endblock %}
+
+

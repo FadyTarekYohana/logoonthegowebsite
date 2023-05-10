@@ -1,0 +1,142 @@
+{% extends "base.html" %} {% block title%}Input Style{% endblock %} {% block
+content %} 
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Font Style</h2>
+        <form action="input-color" method="post">
+          <div class="container d-flex justify-content-center">
+            <div class="m-2">
+              <div class="card" style="width: 15rem; height: 12rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder" style="font-family: thin_1; font-size:3rem">Thin</h5>
+                  </div>
+                  <p style="font-family: thin_1; font-size:1.5rem">Show the gentle side</p>
+                </div>
+
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="thin"
+                    name="style"
+                    value="thin"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-2">
+              <div class="card" style="width: 15rem; height: 12rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder" style="font-family: elegant_1; font-size:3rem">Elegant</h5>
+                  </div>
+                  <p style="font-family: elegant_1; font-size:1.5rem">Touch of sophistication</p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="elegant"
+                    name="style"
+                    value="elegant"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-2">
+              <div class="card" style="width: 15rem; height: 12rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder" style="font-family: bubbly_1; font-size:3rem">Bubbly</h5>
+                  </div>
+                  <p style="font-family: bubbly_1; font-size:1.2rem">Cheerful and lively</p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="bubbly"
+                    name="style"
+                    value="bubbly"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <div class="m-2">
+              <div class="card" style="width: 15rem; height: 12rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder" style="font-family: bold_1; font-size:3rem">Bold</h5>
+                  </div>
+                  <p style="font-family: bold_1; font-size:1.5rem">Leave an impact</p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="bold"
+                    name="style"
+                    value="bold"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-2">
+              <div class="card" style="width: 15rem; height: 12rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder" style="font-family: modern_1; font-size:2.2rem">Modern</h5>
+                  </div>
+                  <p style="font-family: modern_1; font-size:1rem">Crisp with an urban flair</p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="modern"
+                    name="style"
+                    value="modern"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-2">
+              <div class="card" style="width: 15rem; height: 12rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder" style="font-family: classy_1; font-size:3rem">Classy</h5>
+                  </div>
+                  <p style="font-family: classy_1; font-size:1.2rem">Stand the test of time</p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="classy"
+                    name="style"
+                    value="classy"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="mt-5 btn btn-warning" type="submit">Next</button>
+        </form>
+      </section>
+      <!-- End Contact Section -->
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+{% endblock %}

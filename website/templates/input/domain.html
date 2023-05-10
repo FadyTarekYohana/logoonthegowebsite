@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title%}Input Domain{% endblock %} {% block
+content %}
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <h2>Your domain</h2>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <form action="input-subdomain" method="post">
+              <div class="row m-2">
+                <div class="form-group">
+                  <select
+                    class="form-select"
+                    name="domain"
+                    id="domain"
+                    required
+                  >
+                    <option value="0">
+                      Food and Natural Resources
+                    </option>
+                    <option value="1">
+                      Technology
+                    </option>
+                    <option value="2">
+                      Transportation
+                    </option>
+                    <option value="3">
+                      Fashion and Accesssories
+                    </option>
+                    <option value="4">
+                      Sport
+                    </option>
+                    <option value="5">
+                      Other
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <button class="m-2 btn btn-warning" type="submit">Next</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+
+{% endblock %}

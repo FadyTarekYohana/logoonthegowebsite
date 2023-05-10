@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title%}Input Color{% endblock %}
+{% block content %}
+<main id="main">
+    <center>
+        <section class="inner-page ">
+            <section id="contact" class="contact">
+                <div class="container" data-aos="fade-up">
+                    <h2>Choose logo color</h2>
+                    <form action="generating-logo" method="post">
+                    <div class="container d-flex justify-content-center">
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: blue;">
+                                
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="blue" name="color" value="blue" required>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: pink;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="pink" name="color" value="pink" required><br>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: purple;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="purple" name="color" value="purple" required>
+                        </div>
+                      </div>
+                      <div class="container d-flex justify-content-center">    
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: red;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="red" name="color" value="red" required>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: orange;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="orange" name="color" value="orange" required>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: yellow;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="yellow" name="color" value="yellow" required>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: brown;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="brown" name="color" value="brown" required>
+                        </div>
+                      </div>
+                      <div class="container d-flex justify-content-center">    
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: green;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="green" name="color" value="green" required>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: black;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="black" name="color" value="black" required>
+                        </div>
+                        <div class="m-2">
+                            <div class="card" style="width: 6rem; height: 6rem;">
+                                <div class="card-body p-4" style="background-color: grey;">
+                                </div>
+                            </div>
+                            <input class="form-check-input" type="radio" id="grey" name="color" value="grey" required>
+                        </div>
+                      </div>
+                      <button class="mt-5 btn btn-warning" type="submit">Finish</button>
+                    </div>
+                      
+                </div>
+                </form
+            </section><!-- End Contact Section -->
+        </section>
+    </center>
+</main><!-- End #main -->
+{% endblock %}

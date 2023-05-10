@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title%}Input Name And Slogan{% endblock %} {%
+block content %}
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <h2>Launch your brand with a free logo</h2>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <form action="input-domain" method="post">
+              <div class="row m-2">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    placeholder="Brand Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="slogan"
+                    id="slogan"
+                    placeholder="Brand Slogan"
+                  />
+                </div>
+              </div>
+              <button class="m-2 btn btn-warning" type="submit">Next</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+
+{% endblock %}

@@ -1,0 +1,86 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+{% extends "base.html" %} {% block title%}Input Gender{% endblock %} {% block
+content %}
+
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Your target audience gender</h2>
+        <form action="input-class" method="post">
+          <div class="container d-flex justify-content-center">
+            <div class="ms-5">
+              <div class="card" style="width: 18rem; height: 26rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Male</h5>
+                  </div>
+                  <i class="fa fa-mars" style="font-size: 14rem"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="0"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 18rem; height: 26rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Both</h5>
+                  </div>
+                  <i class="fa fa-venus-mars" style="font-size: 14rem"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="both"
+                    name="gender"
+                    value="2"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 18rem; height: 26rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Female</h5>
+                  </div>
+                  <i class="fa fa-venus" style="font-size: 14rem"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="1"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="mt-5 btn btn-warning" type="submit">Next</button>
+        </form>
+      </section>
+      <!-- End Contact Section -->
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+{% endblock %}

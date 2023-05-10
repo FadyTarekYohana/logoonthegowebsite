@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% block title%}Login{% endblock %} {% block content
+%}
+<main id="main">
+  <center>
+    <section class="inner-page">
+        <div class="mt-4 container" data-aos="fade-up">
+          <h2>Login</h2>
+
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <form
+              action="/login"
+              method="post"
+              role="form"
+            >
+              <div class="row m-2">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    id="password"
+                    placeholder="Your Password"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="text-center m-2">
+                <button class="btn btn-warning" type="submit">Login</button>
+              </div>
+              <br />
+              Don't have an account? <a href="sign-up">Sign up</a>
+            </form>
+          </div>
+        </div>
+      </section>
+  </center>
+</main>
+<!-- End #main -->
+
+{% endblock %}

@@ -1,0 +1,154 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+{% extends "base.html" %} {% block title%}Input Social Class{% endblock %} {%
+block content %}
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Your target audience social class</h2>
+        <form action="input-age" method="post">
+          <div class="container d-flex justify-content-center">
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Lower</h5>
+                  </div>
+                  <i class="fa fa-dollar"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="lower"
+                    name="class"
+                    value="1"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Lower Middle</h5>
+                  </div>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="lowermiddle"
+                    name="class"
+                    value="5"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Middle</h5>
+                  </div>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="middle"
+                    name="class"
+                    value="2"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Middle Upper</h5>
+                  </div>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="middleupper"
+                    name="class"
+                    value="4"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Upper</h5>
+                  </div>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                  <i class="fa fa-dollar"></i>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="upper"
+                    name="class"
+                    value="3"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  
+                  <h5 class="fw-bolder">All Social Classes</h5>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="all"
+                    name="class"
+                    value="0"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="mt-5 btn btn-warning" type="submit">Next</button>
+        </form>
+      </section>
+      <!-- End Contact Section -->
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+
+{% endblock %}

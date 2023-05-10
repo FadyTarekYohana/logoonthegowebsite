@@ -1,0 +1,142 @@
+{% extends "base.html" %} {% block title%}Input Sub Domain{% endblock %} {% block
+    content %}
+    <main id="main">
+      <center>
+        <section class="inner-page">
+          <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+              <h2>Your sub domain</h2>
+              <div class="col-lg-4 mt-5 mt-lg-0">
+                <form action="input-gender" method="post">
+                  <div class="row m-2">
+                    <div class="form-group">
+                      <select
+                        class="form-select"
+                        name="subdomain"
+                        id="subdomain"
+                        required
+                      >
+                      <option value="0">
+                        No Sub Domain
+                      </option>
+                      {% if domain == '0' %}
+                      <option value="100">
+                        Fast Food
+                      </option>
+                      <option value="101">
+                        Cafes
+                      </option>
+                      <option value="102">
+                        Pizzeria
+                      </option>
+                      <option value="103">
+                        Drink
+                      </option>
+                      <option value="104">
+                        Other
+                      </option>
+                      {% endif %}
+                      {% if domain == '1' %}
+                      <option value="10">
+                        Cameras
+                      </option>
+                      <option value="11">
+                        Phones
+                      </option>
+                      <option value="12">
+                        Computers
+                      </option>
+                      <option value="13">
+                        Speakers
+                      </option>
+                      <option value="14">
+                        All
+                      </option>
+                      <option value="15">
+                        Other
+                      </option>
+                      {% endif %}
+                      {% if domain == '2' %}
+                      <option value="20">
+                        Cars
+                      </option>
+                      <option value="21">
+                        Motorcycles
+                      </option>
+                      <option value="22">
+                        Bicycles
+                      </option>
+                      <option value="23">
+                        Other
+                      </option>
+                      <option value="24">
+                        All
+                      </option>
+                      {% endif %}
+                      {% if domain == '3' %}
+                      <option value="30">
+                        Classic
+                      </option>
+                      <option value="31">
+                        Casual
+                      </option>
+                      <option value="32">
+                        Shoes
+                      </option>
+                      <option value="33">
+                        Sportswear
+                      </option>
+                      <option value="34">
+                        Watches
+                      </option>
+                      <option value="35">
+                        Bags
+                      </option>
+                      <option value="36">
+                        All
+                      </option>
+                      <option value="37">
+                        Other
+                      </option>
+                      {% endif %}
+                      {% if domain == '4' %}
+                      <option value="40">
+                        Football
+                      </option>
+                      <option value="41">
+                        Basketball
+                      </option>
+                      <option value="42">
+                        Tennis
+                      </option>
+                      <option value="43">
+                        Swimming
+                      </option>
+                      <option value="44">
+                        All
+                      </option>
+                      <option value="45">
+                        Other
+                      </option>
+                      {% endif %}
+                      {% if domain == '5' %}
+                      <option value="50">
+                        Other
+                      </option>
+                      {% endif %}
+                      </select>
+                    </div>
+                  </div>
+                  <button class="m-2 btn btn-warning" type="submit">Next</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Section -->
+        </section>
+      </center>
+    </main>
+    <!-- End #main -->
+    
+    {% endblock %}
+    

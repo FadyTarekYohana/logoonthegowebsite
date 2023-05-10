@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block title%}Sign Up{% endblock %} {% block content
+%}
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <div class="container mt-4" data-aos="fade-up">
+        <h2>Sign Up</h2>
+
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <form action="/sign-up" method="post" role="form">
+            <div class="row m-2">
+              <div class="form-group">
+                <input type="text" class="form-control" name="username" id="username" placeholder="Username" required />
+              </div>
+            </div>
+            <div class="row m-2">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="row m-2">
+              <div class="form-group">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Your Password"
+                  required />
+              </div>
+            </div>
+            <div class="text-center m-2">
+              <button class="btn btn-warning" type="submit">Sign up</button>
+            </div>
+            <br />
+            Already have an account? <a href="login">Log in</a>
+            <hr>
+            <div class="row m-2">
+              <div class="form-group">
+                <input type="password" class="form-control" name="code" id="code" placeholder="Your Code"/>
+                If you are registering a designer or an adminstrator account please enter the correct code,
+                otherwise leave this field empty.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+{% endblock %}

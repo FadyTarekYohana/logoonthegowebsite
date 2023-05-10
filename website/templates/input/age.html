@@ -1,0 +1,166 @@
+{% extends "base.html" %} {% block title%}Input Age Group{% endblock %} {% block
+content %}
+<main id="main">
+  <center>
+    <section class="inner-page">
+      <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Your target audience age group</h2>
+        <form action="input-style" method="post">
+          <div class="container d-flex justify-content-center">
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">10-15</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="1"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">15-20</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="2"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">20-50</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="7"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">20-30</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="3"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container d-flex justify-content-center">
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">30-40</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="4"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">40-60</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="5"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">60+</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="6"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ms-5">
+              <div class="card" style="width: 10rem; height: 10rem">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">All</h5>
+                  </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="age"
+                    value="0"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="mt-5 btn btn-warning" type="submit">Next</button>
+        </form>
+      </section>
+      <!-- End Contact Section -->
+    </section>
+  </center>
+</main>
+<!-- End #main -->
+{% endblock %}
